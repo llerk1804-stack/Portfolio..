@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mijn Portfolio</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    .hero-photo {
+      max-width: 260px;
+      height: auto;
+      border-radius: 18px;
+      object-fit: cover;
+      border: 2px solid var(--brand);
+      box-shadow: 0 0 18px rgba(0,0,0,0.5);
+    }
+    .hero-text p {
+      line-height: 1.7;
+      color: #ccc;
+      margin-bottom: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<header class="py-3 border-bottom">
+  <div class="container d-flex align-items-center justify-content-between">
+    <a href="index.html" class="navbar-brand d-flex align-items-center gap-2">
+      <img src="assets/images/logo.svg" alt="Logo" height="32">
+      <span class="fw-bold text-light">Mijn Portfolio</span>
+    </a>
+    <nav>
+      <ul class="nav">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="py-5">
+  <div class="container">
+
+    <!-- HERO -->
+    <section class="mb-5">
+      <div class="row g-5 align-items-start">
+        <div class="col-12 col-md-7 hero-text">
+          <h1 class="fw-bold text-light mb-1">Karim Alibrahim</h1>
+          <p class="mb-4" style="color:var(--brand); font-weight:500;">Hey, even voorstellen</p>
+
+          <p>Mijn naam is Karim en ik studeer Systeem- en Netwerkbeheer. Sinds het begin van mijn opleiding ontdekte ik hoe fascinerend de wereld van IT-infrastructuur en netwerken eigenlijk is. Wat mij vooral aantrekt, is de combinatie van techniek, logisch denken en het bouwen van oplossingen die echt werken. Elke dag leer ik nieuwe dingen die mij helpen groeien richting een rol als betrouwbare IT-professional.</p>
+
+          <p>Ik ben vooral geïnteresseerd in het ontwerpen, configureren en beheren van stabiele en veilige netwerkomgevingen. Tijdens mijn opleiding werk ik met verschillende systemen en tools, zoals Windows Server, Linux-distributies, virtualisatieplatformen en monitoringsoftware. Het geeft me voldoening om te begrijpen hoe onderdelen binnen een netwerk met elkaar communiceren en hoe je fouten kunt opsporen voor ze echte problemen veroorzaken.</p>
+
+          <p>Daarnaast oefen ik veel met command-line tools, het instellen van gebruikers en rechten, het segmenteren van netwerken met VLAN’s en het beheren van virtuele machines. Ik vind het leuk om uit te zoeken hoe netwerken efficiënter kunnen werken, hoe beveiliging verbeterd kan worden en hoe je systemen kunt automatiseren om tijd te besparen. Het oplossen van technische problemen voelt voor mij een beetje als puzzelen — hoe moeilijker, hoe leuker.</p>
+
+          <p>Op deze website deel ik mijn projecten, vaardigheden en leerervaringen. Je vindt hier onder andere oefeningen rond netwerkbeheer, kleine opdrachten die ik met IT-tools heb uitgevoerd, configuraties van servers en voorbeelden van hoe ik met virtualisatie werk. Elk project toont een stukje van mijn groei en helpt mij om steeds beter te worden in dit vakgebied.</p>
+
+          <p>Wat me motiveert, is dat moderne IT-infrastructuur eigenlijk de basis vormt van bijna alles wat we doen. Van bedrijven die op servers draaien tot thuisnetwerken en cloudomgevingen: achter elke digitale dienst zit iemand die ervoor zorgt dat alles blijft werken. Ik wil zo iemand worden — iemand die zorgt voor veilige, schaalbare en betrouwbare systemen. Ik ben nog maar aan het begin van mijn loopbaan, maar ik ben gemotiveerd en leergierig. Neem gerust een kijkje op mijn website om te zien waar ik mee bezig ben. Bedankt dat je langs komt!</p>
+
+          <a href="portfolio.html" class="btn btn-primary mt-3">Bekijk mijn werk →</a>
+        </div>
+
+        <div class="col-12 col-md-5 text-center text-md-end">
+          <img src="assets/images/profile.jpeg" alt="" class="hero-photo">
+        </div>
+      </div>
+    </section>
+
+    <!-- WAT IK DOE -->
+    <section class="mt-5">
+      <h2 class="h4 mb-3 text-center" style="color:var(--brand);">Wat ik doe</h2>
+      <div class="row g-4 text-center">
+        <div class="col-12 col-md-4">
+          <div class="p-4 rounded" style="background:var(--bg-alt);border:1px solid var(--border);">
+            <h3 class="h5 text-light mb-2">🧰 IT-Tools</h3>
+            <p class="text-muted">Gebruik van IT-tools voor samenwerking en systeembeheer.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="p-4 rounded" style="background:var(--bg-alt);border:1px solid var(--border);">
+            <h3 class="h5 text-light mb-2">🏢 Datacenter</h3>
+            <p class="text-muted">Beheer van virtuele machines, opslag en back-upoplossingen.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="p-4 rounded" style="background:var(--bg-alt);border:1px solid var(--border);">
+            <h3 class="h5 text-light mb-2">⚙️ Server</h3>
+            <p class="text-muted">Installatie en beheer van Windows- en Linux-systemen.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="py-4 border-top text-center">
+  <p class="mb-0 text-muted">&copy; 2025 Karim Alibrahim — Alle rechten voorbehouden.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
