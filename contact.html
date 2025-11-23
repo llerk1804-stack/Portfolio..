@@ -4,107 +4,121 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Contact – Karim Alibrahim</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
     *{box-sizing:border-box;font-family:system-ui,Arial,sans-serif}
-    body{
-        margin:0;
-        background:#0e0f14;
-        color:#fff;
-    }
+    body{margin:0;background:#0f1117;color:#fff}
+
     .wrap{
         width:min(900px,92%);
-        margin:50px auto;
+        margin:40px auto;
     }
 
-    header{
-        text-align:center;
-        margin-bottom:35px;
+    .top{
+        display:flex;
+        align-items:center;
+        justify-content:flex-start;
+        margin-bottom:20px;
     }
-    header h1{
-        margin:0;
+
+    .logo{
+        width:70px;
+        height:70px;
+        background:#16a34a;
+        color:#fff;
         font-size:32px;
         font-weight:700;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        border-radius:14px;
+        box-shadow:0 6px 18px #00000050;
+        letter-spacing:1px;
     }
-    header p{
-        margin:8px 0 0;
-        opacity:.75;
-    }
+
+    header{text-align:center;margin:0 0 25px}
+    header h1{margin:0;font-size:30px}
+    header p{margin-top:6px;color:#cfcfcf}
 
     .grid{
         display:grid;
         grid-template-columns:1fr 1fr;
-        gap:20px;
+        gap:18px;
     }
-    @media(max-width:750px){
-        .grid{grid-template-columns:1fr}
-    }
+    @media(max-width:750px){.grid{grid-template-columns:1fr}}
 
     .card{
         background:#181a22;
-        padding:20px;
-        border-radius:16px;
-        border:1px solid #ffffff12;
+        border-radius:14px;
+        padding:18px;
+        border:1px solid #ffffff15;
     }
 
-    .info h3, .form h3{
-        margin:0 0 15px;
-        font-size:19px;
-        font-weight:700;
+    .info h3,.form h3{
+        margin:0 0 16px;
+        font-size:18px;
     }
 
     .item{
-        margin-bottom:15px;
-        padding:12px 14px;
         background:#ffffff08;
+        padding:10px 14px;
+        margin-bottom:14px;
         border-radius:12px;
     }
-    .item small{
-        display:block;
-        font-size:12px;
-        color:#cccccc;
-    }
-    .item div{
-        font-size:15px;
-        margin-top:3px;
-        font-weight:600;
-    }
+    .item small{font-size:12px;color:#bdbdbd}
+    .item div{margin-top:4px;font-size:15px;font-weight:600}
 
-    input, textarea{
+    input,textarea{
         width:100%;
-        padding:12px;
-        margin-top:8px;
-        border-radius:12px;
-        border:1px solid #444;
         background:#101218;
-        color:#fff;
+        border:1px solid #333;
+        border-radius:12px;
+        padding:11px;
         font-size:14px;
-        resize:none;
+        color:#fff;
+        margin-top:8px;
     }
-
-    textarea{height:130px}
+    textarea{height:120px;resize:none}
 
     button{
         width:100%;
         padding:12px;
-        margin-top:12px;
         border:0;
         border-radius:12px;
+        background:#16a34a;
+        color:#fff;
+        font-size:15px;
         font-weight:700;
         cursor:pointer;
-        background:#ffb547;
-        color:#000;
-        font-size:15px;
+        margin-top:12px;
     }
-    button:hover{
-        filter:brightness(1.07);
+    button:hover{filter:brightness(1.1)}
+
+    footer{
+        text-align:center;
+        color:#9b9b9b;
+        margin:40px 0 20px;
+        font-size:13px;
     }
+    .socials a{
+        font-size:22px;
+        margin:0 10px;
+        color:#d1d1d1;
+        text-decoration:none;
+        transition:.2s;
+    }
+    .socials a:hover{color:#16a34a}
 </style>
 </head>
 
 <body>
 
 <div class="wrap">
+
+    <div class="top">
+        <div class="logo">KA</div>
+    </div>
 
     <header>
         <h1>Contact</h1>
@@ -113,7 +127,6 @@
 
     <section class="grid">
 
-        <!-- Info -->
         <div class="card info">
             <h3>Contactinformatie</h3>
 
@@ -136,10 +149,8 @@
                 <small>Locatie</small>
                 <div>België</div>
             </div>
-
         </div>
 
-        <!-- Form -->
         <div class="card form">
             <h3>Stuur een bericht</h3>
 
@@ -152,6 +163,14 @@
         </div>
 
     </section>
+
+    <footer>
+        <div class="socials">
+            <a href="#" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+            <a href="mailto:lle.rk1804@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+         2025 Karim Alibrahim
+    </footer>
 
 </div>
 
