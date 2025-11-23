@@ -1,85 +1,159 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | Mijn Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact – Karim Alibrahim</title>
 
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+    *{box-sizing:border-box;font-family:system-ui,Arial,sans-serif}
+    body{
+        margin:0;
+        background:#0e0f14;
+        color:#fff;
+    }
+    .wrap{
+        width:min(900px,92%);
+        margin:50px auto;
+    }
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/fonts.css">
-  <link rel="stylesheet" href="css/style.css">
+    header{
+        text-align:center;
+        margin-bottom:35px;
+    }
+    header h1{
+        margin:0;
+        font-size:32px;
+        font-weight:700;
+    }
+    header p{
+        margin:8px 0 0;
+        opacity:.75;
+    }
+
+    .grid{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:20px;
+    }
+    @media(max-width:750px){
+        .grid{grid-template-columns:1fr}
+    }
+
+    .card{
+        background:#181a22;
+        padding:20px;
+        border-radius:16px;
+        border:1px solid #ffffff12;
+    }
+
+    .info h3, .form h3{
+        margin:0 0 15px;
+        font-size:19px;
+        font-weight:700;
+    }
+
+    .item{
+        margin-bottom:15px;
+        padding:12px 14px;
+        background:#ffffff08;
+        border-radius:12px;
+    }
+    .item small{
+        display:block;
+        font-size:12px;
+        color:#cccccc;
+    }
+    .item div{
+        font-size:15px;
+        margin-top:3px;
+        font-weight:600;
+    }
+
+    input, textarea{
+        width:100%;
+        padding:12px;
+        margin-top:8px;
+        border-radius:12px;
+        border:1px solid #444;
+        background:#101218;
+        color:#fff;
+        font-size:14px;
+        resize:none;
+    }
+
+    textarea{height:130px}
+
+    button{
+        width:100%;
+        padding:12px;
+        margin-top:12px;
+        border:0;
+        border-radius:12px;
+        font-weight:700;
+        cursor:pointer;
+        background:#ffb547;
+        color:#000;
+        font-size:15px;
+    }
+    button:hover{
+        filter:brightness(1.07);
+    }
+</style>
 </head>
+
 <body>
 
-  <!-- Header -->
-  <header class="py-3 border-bottom">
-    <div class="container d-flex flex-wrap justify-content-between align-items-center">
-      <a href="index.html" class="navbar-brand fw-bold text-uppercase" style="color:var(--brand);">Mijn Portfolio</a>
-      <nav class="nav">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="portfolio.html" class="nav-link">Portfolio</a>
-        <a href="contact.html" class="nav-link active">Contact</a>
-      </nav>
-    </div>
-  </header>
+<div class="wrap">
 
-  <!-- Main Content -->
-  <main class="container py-5">
-    <section class="text-center mb-5">
-      <h1 style="color:var(--accent);">Neem contact op</h1>
-      <p class="text-muted mt-2">
-        Heb je vragen of wil je samenwerken? Vul het formulier in of stuur me een bericht via e-mail.
-      </p>
+    <header>
+        <h1>Contact</h1>
+        <p>Stuur me gerust een bericht</p>
+    </header>
+
+    <section class="grid">
+
+        <!-- Info -->
+        <div class="card info">
+            <h3>Contactinformatie</h3>
+
+            <div class="item">
+                <small>Naam</small>
+                <div>Karim Alibrahim</div>
+            </div>
+
+            <div class="item">
+                <small>Email</small>
+                <div>lle.rk1804@gmail.com</div>
+            </div>
+
+            <div class="item">
+                <small>Telefoon</small>
+                <div>0484 49 41 69</div>
+            </div>
+
+            <div class="item">
+                <small>Locatie</small>
+                <div>België</div>
+            </div>
+
+        </div>
+
+        <!-- Form -->
+        <div class="card form">
+            <h3>Stuur een bericht</h3>
+
+            <form>
+                <input type="text" placeholder="Je naam" required>
+                <input type="email" placeholder="Je e-mailadres" required>
+                <textarea placeholder="Je bericht..." required></textarea>
+                <button type="submit">Verzenden</button>
+            </form>
+        </div>
+
     </section>
 
-    <div class="row g-5">
-      <!-- Contact Form -->
-      <div class="col-md-7">
-        <form action="#" method="post" class="p-4 rounded" style="background: var(--bg-alt); box-shadow: 0 0 20px rgba(0,255,136,0.2);">
-          <div class="mb-3">
-            <label for="name" class="form-label">Naam</label>
-            <input type="text" id="name" name="name" class="form-control" required>
-          </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">E-mail</label>
-            <input type="email" id="email" name="email" class="form-control" required>
-          </div>
-          <div class="mb-3">
-            <label for="subject" class="form-label">Onderwerp</label>
-            <input type="text" id="subject" name="subject" class="form-control">
-          </div>
-          <div class="mb-3">
-            <label for="message" class="form-label">Bericht</label>
-            <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary px-4">Verstuur</button>
-        </form>
-      </div>
+</div>
 
-      <!-- Contact Info -->
-      <div class="col-md-5">
-        <div class="p-4 rounded" style="background: rgba(0,0,0,0.8); border: 1px solid var(--border);">
-          <h4 class="mb-3" style="color:var(--brand);">Contactgegevens</h4>
-          <p><strong>Email:</strong> <a href="mailto:lle.rk1804@gmail.com" style="color:var(--accent); text-decoration:none;">lle.rk1804@gmail.com</a></p>
-          <p><strong>Telefoon:</strong> <span style="color:var(--text);"></span></p>
-          <p><strong>Locatie:</strong> <span style="color:var(--text);">Antwerpen, België</span></p>
-          <hr class="my-4" style="border-color: var(--border);">
-          <p class="text-muted">Ik sta open voor freelance projecten, samenwerkingen of gewoon een goed gesprek over technologie!</p>
-        </div>
-      </div>
-    </div>
-  </main>
->
-  <!-- Footer -->
-  <footer class="mt-5 py-3 border-top text-center" style="color:var(--muted); background:var(--bg-alt);">
-    <p>Altijd Welkom!</p>
-  </footer>
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
